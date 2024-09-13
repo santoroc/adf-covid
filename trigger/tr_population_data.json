@@ -1,0 +1,17 @@
+{
+	"name": "tr_population_data",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/population/blobs/population_by_age.tsv.gz",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/8a506d55-d17e-443c-962e-2858e02cc5f7/resourceGroups/covid-reporting-rg/providers/Microsoft.Storage/storageAccounts/covidadfsantorocproject1",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
